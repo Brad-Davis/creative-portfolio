@@ -26,10 +26,10 @@ const About = () => {
         <a href="https://www.instagram.com/bcd_rom/" aria-label="Instagram">
           <FaInstagram size={30} />
         </a>
-        <a href="https://www.linkedin.com" aria-label="LinkedIn">
+        <a href="https://www.linkedin.com/in/brad-camp-davis/" aria-label="LinkedIn">
           <FaLinkedin size={30} />
         </a>
-        <a href="mailto:example@example.com" aria-label="Email">
+        <a href="mailto:braddavis97@gmail.com" aria-label="Email">
           <FaEnvelope size={30} />
         </a>
       </div>
