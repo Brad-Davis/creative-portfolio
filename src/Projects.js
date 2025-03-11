@@ -1,4 +1,7 @@
 import React, { useState, useEffect } from 'react';
+import ImageGallery from "react-image-gallery";
+// import stylesheet if you're not already using CSS @import
+import "react-image-gallery/styles/css/image-gallery.css";
 import './Projects.css';
 
 const projects = [
@@ -10,7 +13,13 @@ const projects = [
     techUsed: 'Javascript, Tone.js, Socket.io, OpenAI GPT, Touchdesigner, Ableton',
     description: 'An immersive installation surrounding the ancient art of tea leaf reading. Participants place down their tea cup where and are offers divine wisdom in return.', 
     // details: 'This project uses cutting-edge technologies like React and Node.js. It has been implemented with the goal of solving real-world problems.',
-    imageUrl: './img/morningLight.jpg'
+    imageUrl: './img/morningLight.jpg',
+    gallery: [
+      {original: "./img/ml2.jpg", }, 
+      {original: "./img/ml1.jpg", }, 
+      {original: "./img/ml3.jpg", }, 
+      {original: "./img/ml4.jpg", }, 
+     ],
   },
   { 
     id: 2, 
@@ -22,7 +31,11 @@ const projects = [
     description: 'A {room} of one’s own is an XR performance and hysterical journey about making creative work within a confined space.', 
     details: '',
     imageUrl: './img/roomOfOnesOwn.jpg',
-    gallery: ["./img/room1.webp", "./img/room2.webp", "./img/room3.png", "./img/room4.webp"],
+    gallery: [
+      {original: "./img/room3.jpg", }, 
+      {original: "./img/room2.jpg", }, 
+      {original: "./img/room1.jpg", }, 
+      {original: "./img/room4.jpg", }],
   },
   { 
     id: 3, 
@@ -151,11 +164,9 @@ const Projects = () => {
 
             {expandedProjectId === project.id && project.gallery && (
               <div className="project-details">
-                <p>{project.details}</p>
-                <div className="gallery">
-                  {project.gallery.map((image, index) => (
-                    <img key={index} src={image} alt={`Gallery ${index}`} className="lazy-load" />
-                  ))}
+                {/* <p>{project.details}</p> */}
+                <div className="gallery" style={{ maxWidth: '600px', margin: "auto" }}>
+                  <ImageGallery items={project.gallery} showPlayButton={false} lazyLoad={true} showThumbnails={false} showFullscreenButton={false}/>
                 </div>
               </div>
             )}
