@@ -42,7 +42,7 @@ const projects = [
     title: 'Fras Fest', 
     roleTitle: 'Head Organizer/Performer',
     techUsed: 'Ableton, Lighting Design, Live Mixing',
-    description: 'A music festival showcasing amazing artists from across the northeastern music scene working alongside technical artists to create a holy unique experience. With over 30 artists involved this festival is the most ambitious live undertaking I\'ve ever been a part of.', 
+    description: 'A music festival showcasing amazing artists from across the northeastern music scene working alongside technical artists to create a wholly unique experience. With over 30 artists involved this festival is the most ambitious live undertaking I\'ve ever been a part of.', 
     // details: 'The idea was simple yet powerful. It was implemented in various industries and quickly became a standard solution.',
     imageUrl: './img/frasFest.jpg'
   },
@@ -71,7 +71,7 @@ const projects = [
     title: 'Dear Dancer', 
     roleTitle: 'Creative Technologist/Web Developer',
     techUsed: 'Javascript, Three.js, Blender',
-    description: 'A web experience that allows the user to interact with a 3D dancer via typing. Each letter is uniquely mapped to a dance move which have all been performed and mapped onto a avatar, and as the user types the words will be perfomred back at the user.', 
+    description: 'A web experience that allows the user to interact with a 3D dancer via typing. Each letter is uniquely mapped to a dance move which have all been performed and mapped onto an avatar, and as the user types the words will be perfomred back at the user.', 
     // details: 'Its impact has been felt worldwide, providing sustainable and long-lasting solutions to environmental challenges.',
     imageUrl: './img/dearDancer.png'
   },
@@ -79,7 +79,7 @@ const projects = [
     id: 7, 
     title: 'To Start in the Dark', 
     techUsed: 'Ableton, Acelorometers, Max For Live',
-    description: 'A live performance/Interactive installation that explored movement based control of music. The goal was to create an unstandable system that could be explored much like coming into contact with a new instrument or an unfamiliar way to express yourself that can be easily explored.', 
+    description: 'A live performance/Interactive installation that explored movement based control of music. The goal was to create an understandable system that could be explored much like coming into contact with a new instrument or an unfamiliar way to express yourself that can be easily explored.', 
     // details: 'This project revolutionized how we approach day-to-day tasks, integrating AI and automation for seamless results.',
     imageUrl: './img/toStartInTheDark.jpg'
   },
