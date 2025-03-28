@@ -29,7 +29,7 @@ const App = () => {
           <LightSwitch setDarkMode={setDarkMode} darkMode={darkMode} />
         </div>
         <div className='container'>
-          <h1 style={{textAlign: "left", maxWidth: "1300px"}}>Brad Davis is a creative technologist and music producer based in Brooklyn whose work in web and music attempts to bridge the distance that the internet has created.</h1>
+          <h1 className="phoneShrink" style={{textAlign: "left", maxWidth: "1300px"}}>Brad Davis is a creative technologist and music producer based in Brooklyn. His work in web and music aims to close the gap the internet has created.</h1>
           <Projects />
           <Music />
           <About />

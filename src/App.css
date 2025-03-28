@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Sorts+Mill+Goudy&display=swap');
 
+@font-face {
+  font-family: 'ManifontGroteskBook';
+  src: url('../public/fonts/ManifontGroteskBook.ttf') format('truetype');
+}
+
+
 html {
   scroll-behavior: smooth;
 }
@@ -10,7 +16,7 @@ html {
 
 body {
   margin: 0;
-  font-family: 'Sorts Mill Goudy', serif;
+  font-family: 'ManifontGroteskBook', serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: white;
@@ -94,7 +100,7 @@ nav li {
 }
 
 nav a {
-  font-size: 1.2em;
+  font-size: 1.5em;
   text-decoration: none;
   transition: color 0.3s; /* Add transition for border-color */
   position: relative;
@@ -162,6 +168,10 @@ nav a:hover::after {
 
   .flexyyy {
     flex-direction: column;
+  }
+
+  .phoneShrink{
+    font-size: 1.2em;
   }
 }
 
