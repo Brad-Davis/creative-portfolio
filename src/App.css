@@ -3,6 +3,7 @@
 @font-face {
   font-family: 'ManifontGroteskBook';
   src: url('../public/fonts/ManifontGroteskBook.ttf') format('truetype');
+  font-weight: 1; /* Make the font thinner */
 }
 
 
@@ -20,14 +21,23 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: white;
+  font-weight: lighter !important;
   color: black;
 }
 
 h1 {
-  font-weight: 100;
+  font-weight: lighter;
 }
 
 h2 {
+  font-weight: lighter;
+}
+
+h3 {
+  font-weight: lighter;
+}
+
+h5 {
   font-weight: 100;
 }
 

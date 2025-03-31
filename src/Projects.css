@@ -26,7 +26,7 @@
   }
   
   .project-card.expanded .project-details {
-    max-height: 500px; /* Adjust this value based on your content */
+    max-height: 600px; /* Adjust this value based on your content */
   }
   
   .projects-grid {
@@ -83,9 +83,13 @@
   }
   
   .project-details {
-    margin-top: 10px;
+    margin-top: 0;
     font-size: 1.1rem;
     grid-column: span 2;
+  }
+
+  .project-details p {
+    margin-bottom: 35px;
   }
   
   .project-card.expanded {
@@ -95,7 +99,7 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     column-gap: 50px;
-    row-gap: 30px;
+    row-gap: 10px;
   }
 
 

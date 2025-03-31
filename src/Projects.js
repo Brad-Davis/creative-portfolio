@@ -12,7 +12,8 @@ const projects = [
     links: [{link: 'https://www.instagram.com/chachafestival/?hl=en', text: 'Cha Cha Fest Instagram'}, {link: 'https://interiordesign.net/designwire/highlights-from-new-yorks-cha-cha-festival/#:~:text=Oolong%20Tea%20House%3A%20Morning%20Light%20by%20Aaron%20Santiago%20%26%20Michaela%20Ternasky%2DHolland&text=Michaela%20Ternasky%2DHolland-,Oolong%20Tea%20House.,-Visual%20artists%20Aaron', text: 'Press from Interior Design Magazine'}],
     techUsed: 'Javascript, Tone.js, Socket.io, OpenAI GPT, Touchdesigner, Ableton',
     description: 'An immersive installation surrounding the ancient art of tea leaf reading. Participants place down their tea cup where and are offers divine wisdom in return.', 
-    // details: 'This project uses cutting-edge technologies like React and Node.js. It has been implemented with the goal of solving real-world problems.',
+    details: "This installation was presented at the Cha Cha Festival in New York City that celebrates tea and its rituals. \
+    Within the WSA building, the installation was designed to create a meditative space where participants could seek guidance through the ritual of tea leaf reading. My role involved composing the score for the installation, and working closely with head Artist Aaron Santiago. I utilized Tone.js for the audio synthesis and Socket.io to handle real-time communication between the installation's components. We used OpenAI's GPT model to provide dynamic and personalized responses based on the tea leaves' patterns.  which allowed for a seamless blend of audio and visual elements, enhancing the overall experience.",
     imageUrl: './img/morningLight.jpg',
     gallery: [
       {original: "./img/ml2.jpg", }, 
@@ -61,7 +62,7 @@ const projects = [
     title: 'Theater Royale', 
     roleTitle: 'Creative Technologist',
     techUsed: 'Javascript, Socket.io, OBS',
-    links: [{link: "https://www.americantheatre.org/2025/03/07/game-plays-the-thing-for-new-fortnite-based-theatre-company/", text: "Press: American Theater"}],
+    links: [{link: "https://www.twitch.tv/theatreroyale", text: "Theater Royale Twitch" }, {link: "https://www.americantheatre.org/2025/03/07/game-plays-the-thing-for-new-fortnite-based-theatre-company/", text: "Press: American Theater", }],
     description: 'It’s both a theater company and an interactive livestream. Two actors perform a play—currently in rotation are Waiting for Godot by Samuel Beckett, Antigone by Sophocles, and Love Letters by A. R. Gurney—while simultaneously playing the video game Fortnite.', 
     // details: 'Its impact has been felt worldwide, providing sustainable and long-lasting solutions to environmental challenges.',
     imageUrl: './img/theaterRoyal.jpg'
@@ -100,7 +101,7 @@ const Projects = () => {
   const handleClick = (id) => {
     // Toggle the expanded state for the clicked project
     setExpandedProjectId(expandedProjectId === id ? null : id);
-    if (expandedProjectId === id) return; // If already expanded, do not scroll again
+    // if (expandedProjectId === id) return; // If already expanded, do not scroll again
     const element = document.getElementById(`project-${id}`);
     setTimeout(() => {
       element.scrollIntoView({ behavior: 'smooth', block: 'start', inline: 'nearest' });
@@ -164,7 +165,7 @@ const Projects = () => {
 
             {expandedProjectId === project.id && project.gallery && (
               <div className="project-details">
-                {/* <p>{project.details}</p> */}
+                <p>{project.details}</p>
                 <div className="gallery" style={{ maxWidth: '600px', margin: "auto" }}>
                   <ImageGallery items={project.gallery} showPlayButton={false} lazyLoad={true} showThumbnails={false} showFullscreenButton={false}/>
                 </div>
