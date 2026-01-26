@@ -24,12 +24,12 @@ const projects = [
   },
   { 
     id: 2, 
-    title: 'Under The Radar: A {Room} of One\'s Own', 
+    title: 'Under The Radar: A \{Room\} of One\'s Own', 
     roleTitle: 'Score Composer/Technical Director',
     links: [{link: "https://utrfest.org/program/a-room-of-ones-own/", text: "Under The Radar Festival"}],
     
     techUsed: 'Ableton, Touchdesigner, Live Mixing',
-    description: 'A {room} of one’s own is an XR performance and hysterical journey about making creative work within a confined space.', 
+    description: 'A \{room\} of one’s own is an XR performance and hysterical journey about making creative work within a confined space.', 
     details: '',
     imageUrl: './img/roomOfOnesOwn.jpg',
     gallery: [
@@ -140,14 +140,15 @@ const Projects = () => {
       <div className="projects-grid">
         {projects.map((project) => (
           <div 
+            onClick={() => handleClick(project.id)}
             key={project.id} 
             id={`project-${project.id}`}
             className={`project-card ${expandedProjectId === project.id ? 'expanded' : ''}`} 
           >
-            <img onClick={() => handleClick(project.id)} src={project.imageUrl} alt={project.title} className="project-image" />
+            <img  src={project.imageUrl} alt={project.title} className="project-image" />
             
             <div className="project-text">
-              <h3 onClick={() => handleClick(project.id)}>{project.title}</h3>
+              <h3>{project.title}</h3>
               <h5>{project.roleTitle}</h5>
               {expandedProjectId === project.id && project.techUsed && (<h5>Tools: {project.techUsed}</h5>)}
               {expandedProjectId === project.id && project.links && (

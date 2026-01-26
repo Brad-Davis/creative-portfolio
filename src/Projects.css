@@ -117,7 +117,6 @@
 
   .project-links {
     font-size: 0.9em;
-    text-decoration: none;
     transition: color 0.3s;
     position: relative;
     color: black;
@@ -131,9 +130,6 @@
   .project-links:hover {
     color: #808080 !important;
   }
-
-
-
   
   @media (max-width: 768px) {
 
